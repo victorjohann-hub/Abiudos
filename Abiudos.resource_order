@@ -1,0 +1,15 @@
+{
+  "FolderOrderSettings":[],
+  "ResourceOrderSettings":[
+    {"name":"Object1","order":1,"path":"objects/Object1/Object1.yy",},
+    {"name":"oCamera","order":1,"path":"objects/oCamera/oCamera.yy",},
+    {"name":"sPlayerIdle_S","order":4,"path":"sprites/sPlayerIdle_S/sPlayerIdle_S.yy",},
+    {"name":"sPlayerRun_D","order":5,"path":"sprites/sPlayerRun_D/sPlayerRun_D.yy",},
+    {"name":"sPlayerRun_S","order":7,"path":"sprites/sPlayerRun_S/sPlayerRun_S.yy",},
+    {"name":"sPlayerRun_W","order":6,"path":"sprites/sPlayerRun_W/sPlayerRun_W.yy",},
+    {"name":"spr_bullet","order":1,"path":"sprites/spr_bullet/spr_bullet.yy",},
+    {"name":"spr_player","order":2,"path":"sprites/spr_player/spr_player.yy",},
+    {"name":"spr_rock_big","order":3,"path":"sprites/spr_rock_big/spr_rock_big.yy",},
+    {"name":"sRoomFloor","order":1,"path":"sprites/sRoomFloor/sRoomFloor.yy",},
+  ],
+}
