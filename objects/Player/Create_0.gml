@@ -1,3 +1,5 @@
+can_run_when_paused = false;
+
 enum DIR {
     DOWN,
     UP,

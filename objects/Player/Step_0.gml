@@ -1,5 +1,12 @@
+///Pause Check
+if (global.game_paused && !can_run_when_paused) exit;
+show_debug_message("paused: " + string(global.game_paused));
+
 hor_move = keyboard_check(vk_right) - keyboard_check(vk_left);
 ver_move = keyboard_check(vk_down) - keyboard_check(vk_up);
+
+
+
 
 var moving = (hor_move != 0 or ver_move != 0);
 
@@ -44,3 +51,4 @@ switch (state) {
 
     break;
 }
+
