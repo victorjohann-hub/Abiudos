@@ -6,6 +6,7 @@
     {"name":"oDialogueController","order":4,"path":"objects/oDialogueController/oDialogueController.yy",},
     {"name":"oGameController","order":3,"path":"objects/oGameController/oGameController.yy",},
     {"name":"oStar_Item","order":5,"path":"objects/oStar_Item/oStar_Item.yy",},
+    {"name":"sCity","order":11,"path":"sprites/sCity/sCity.yy",},
     {"name":"sPlayerIdle_S","order":4,"path":"sprites/sPlayerIdle_S/sPlayerIdle_S.yy",},
     {"name":"sPlayerRun_D","order":5,"path":"sprites/sPlayerRun_D/sPlayerRun_D.yy",},
     {"name":"sPlayerRun_S","order":7,"path":"sprites/sPlayerRun_S/sPlayerRun_S.yy",},
@@ -13,7 +14,10 @@
     {"name":"spr_bullet","order":1,"path":"sprites/spr_bullet/spr_bullet.yy",},
     {"name":"spr_player","order":2,"path":"sprites/spr_player/spr_player.yy",},
     {"name":"spr_rock_big","order":3,"path":"sprites/spr_rock_big/spr_rock_big.yy",},
+    {"name":"Sprite11","order":10,"path":"sprites/Sprite11/Sprite11.yy",},
     {"name":"sRoomFloor","order":1,"path":"sprites/sRoomFloor/sRoomFloor.yy",},
     {"name":"sStar_Item","order":8,"path":"sprites/sStar_Item/sStar_Item.yy",},
+    {"name":"sWater","order":12,"path":"sprites/sWater/sWater.yy",},
+    {"name":"tWater","order":1,"path":"tilesets/tWater/tWater.yy",},
   ],
 }
