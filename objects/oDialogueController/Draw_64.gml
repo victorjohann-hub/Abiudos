@@ -1,42 +1,22 @@
-var margin = 32;
-var box_height = 160;
+var w = display_get_gui_width();
+var h = display_get_gui_height();
 
-// Caixa
+var box_h = 120;
+var margin = 20;
+
 draw_set_color(c_black);
 draw_rectangle(
     margin,
-    room_height - box_height,
-    room_width - margin,
-    room_height - margin,
+    h - box_h - margin,
+    w - margin,
+    h - margin,
     false
 );
 
-// Texto
-if (array_length(texts) > 0 && index < array_length(texts)) {
-    
-    draw_set_color(c_white);
-    draw_text(
-        50,
-        room_height - 140,
-        texts[index]
-    );
-}
+draw_set_color(c_white);
 
-
-// Item grande no centro
-if (item_sprite != noone) {
-
-    var cx = room_width / 2;
-    var cy = room_height / 2;
-
-    draw_sprite_ext(
-        item_sprite,
-        0,
-        cx,
-        cy,
-        3, 3, // escala
-        0,
-        c_white,
-        1
-    );
-}
+draw_text(
+    margin + 10,
+    h - box_h,
+    texts[index]
+);

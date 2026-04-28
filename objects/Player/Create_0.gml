@@ -24,9 +24,14 @@ spr_idle = [
 spr_run = [
     sPlayerRun_S, // DOWN
     sPlayerRun_W, // UP
-    sPlayerRun_D, // LEFT (vai inverter)
+    sPlayerRun_D, // LEFT inversão
     sPlayerRun_D  // RIGHT
 ];
 
 dir = DIR.DOWN;
 state = STATE.IDLE;
+
+
+
+hsp = 0;
+vsp = 0;

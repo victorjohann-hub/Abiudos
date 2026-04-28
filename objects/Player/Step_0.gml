@@ -71,32 +71,43 @@ switch (state) {
 
 
 /// =========================
-/// 🧱 COLISÃO PIXEL A PIXEL
+/// 🧱 MOVIMENTO COM ACUMULAÇÃO
 /// =========================
 
-// --- X ---
-var mx = round(move_x);
+// Acumula velocidade fracionada
+hsp += move_x;
+vsp += move_y;
 
+// Parte inteira do movimento
+var mx = floor(hsp);
+var my = floor(vsp);
+
+// Mantém o restante fracionado
+hsp -= mx;
+vsp -= my;
+
+
+// --- X ---
 repeat (abs(mx)) {
     
     x += sign(mx);
     
     if (place_meeting(x, y, oSolid)) {
         x -= sign(mx);
+        hsp = 0;
         break;
     }
 }
 
 
 // --- Y ---
-var my = round(move_y);
-
 repeat (abs(my)) {
     
     y += sign(my);
     
     if (place_meeting(x, y, oSolid)) {
         y -= sign(my);
+        vsp = 0;
         break;
     }
 }
