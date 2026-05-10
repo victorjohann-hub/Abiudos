@@ -30,8 +30,12 @@ spr_run = [
 
 dir = DIR.DOWN;
 state = STATE.IDLE;
+<<<<<<< HEAD
 
 
 
 hsp = 0;
 vsp = 0;
+=======
+tem_item = false;
+>>>>>>> 9ea7e83 (Sistema de spawn adicionado)
