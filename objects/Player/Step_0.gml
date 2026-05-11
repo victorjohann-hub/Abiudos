@@ -69,7 +69,6 @@ switch (state) {
     break;
 }
 
-<<<<<<< HEAD
 
 /// =========================
 /// 🧱 MOVIMENTO COM ACUMULAÇÃO
@@ -118,13 +117,3 @@ repeat (abs(my)) {
 /// 🎨 PROFUNDIDADE
 /// =========================
 depth = -y;
-=======
-        // Se encostar no objeto
-        if (place_meeting(x, y, oStar_Item)) {
-        var inst = instance_place(x, y, oStar_Item);
-        if (inst != noone) 
-        instance_destroy(inst); // Some com o item
-        tem_item = true;        // Player agora tem o item
-    }
-
->>>>>>> dd99c84 (Sistema de spawn e update do player)
