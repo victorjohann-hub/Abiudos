@@ -1,25 +1,54 @@
 /// =========================
-/// ⏸️ PAUSE
+/// PAUSE
 /// =========================
 if (global.game_paused && !can_run_when_paused) exit;
 
 
-// DEBUG (opcional)
+// DEBUG
 show_debug_message("paused: " + string(global.game_paused));
 
 
 /// =========================
-/// 🎮 INPUT
-/// =========================
+/// INPUT
+
 var hor_move = keyboard_check(vk_right) - keyboard_check(vk_left);
 var ver_move = keyboard_check(vk_down) - keyboard_check(vk_up);
 
 var moving = (hor_move != 0 || ver_move != 0);
 
 
-/// =========================
-/// ⚡ MOVIMENTO
-/// =========================
+/// INVENCIBILIDADE e HIT
+
+if (invincible) {
+	damage_timer--;
+	
+	if (damage_timer <= 0) {
+	invincible = false;
+	image_blend = c_white}
+}
+
+if (invincible) {
+    
+    // alterna entre vermelho e normal
+    if (damage_timer mod 6 < 3) {
+        image_blend = c_red;
+    } else {
+        image_blend = c_white;
+    }
+}
+
+
+/// morte
+
+if (hp <= 0) {
+    
+    global.game_paused = true; // pausa o jogo
+    
+    instance_destroy(); // remove o player
+}
+
+/// MOVIMENTO
+
 var spd = 2;
 
 var move_x = 0;
@@ -32,9 +61,9 @@ if (moving) {
 }
 
 
-/// =========================
-/// 🧠 STATE MACHINE
-/// =========================
+
+/// STATE MACHINE
+
 switch (state) {
 
     case STATE.IDLE:

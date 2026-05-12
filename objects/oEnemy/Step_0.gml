@@ -1,9 +1,9 @@
 /// =========================
 /// Afetado pelo Pause
 /// =========================
-if (global.game_paused) exit;
+if (global.game_paused && !can_run_when_paused) exit;
 
-
+shoot_cooldown--;
 
 if (!instance_exists(Player)) exit;
 
@@ -13,6 +13,17 @@ var dy = Player.y - y;
 
 
 var dist = point_distance(x, y, Player.x, Player.y);
+
+if (dist < 200 && shoot_cooldown <=0) {
+    var dir = point_direction(x, y, Player.x, Player.y);
+
+    var b = instance_create_layer(x, y, "Bullets", oBulletEnemy);
+
+    b.direction = dir;
+    b.speed = 3;
+
+    shoot_cooldown = shoot_delay;
+	};
 
 
 

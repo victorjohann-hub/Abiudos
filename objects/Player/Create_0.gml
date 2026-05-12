@@ -1,4 +1,9 @@
 can_run_when_paused = false;
+hp = 10;
+damage_timer = 0;
+invincible = false;
+damage_duration = 30; /// meio segundo
+
 
 enum DIR {
     DOWN,
