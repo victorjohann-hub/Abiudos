@@ -1,11 +1,15 @@
-/// =========================
 /// Afetado pelo Pause
-/// =========================
+
 if (global.game_paused && !can_run_when_paused) exit;
 
 shoot_cooldown--;
 
 if (!instance_exists(Player)) exit;
+
+if (HP <= 0) {
+    instance_destroy();
+}
+
 
 
 var dx = Player.x - x;
@@ -21,6 +25,7 @@ if (dist < 200 && shoot_cooldown <=0) {
 
     b.direction = dir;
     b.speed = 3;
+	audio_play_sound(snd_shoot1, 1, false);
 
     shoot_cooldown = shoot_delay;
 	};
