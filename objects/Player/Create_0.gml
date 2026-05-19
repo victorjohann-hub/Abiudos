@@ -8,8 +8,11 @@ damage_timer = 0;
 invincible = false;
 damage_duration = 30; /// meio segundo
 
+
 hsp = 0;
 vsp = 0;
+
+
 
 // DASH
 can_dash = true;

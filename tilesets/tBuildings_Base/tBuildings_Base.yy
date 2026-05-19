@@ -1,13 +1,13 @@
 {
   "$GMTileSet":"v1",
-  "%Name":"TileSet4",
+  "%Name":"tBuildings_Base",
   "autoTileSets":[],
   "macroPageTiles":{
     "SerialiseHeight":0,
     "SerialiseWidth":0,
     "TileSerialiseData":[],
   },
-  "name":"TileSet4",
+  "name":"tBuildings_Base",
   "out_columns":88,
   "out_tilehborder":2,
   "out_tilevborder":2,
@@ -18,8 +18,8 @@
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",
   "spriteId":{
-    "name":"map_floor",
-    "path":"sprites/map_floor/map_floor.yy",
+    "name":"sMap_Buildings_Base",
+    "path":"sprites/sMap_Buildings_Base/sMap_Buildings_Base.yy",
   },
   "spriteNoExport":false,
   "textureGroupId":{

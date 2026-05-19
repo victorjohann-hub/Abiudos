@@ -174,11 +174,9 @@ switch (state) {
 
     break;
 }
-
-
-
-///Colisão
-
+/// =========================
+/// 🧱 COLISÃO (VERSÃO ANTIGA)
+/// =========================
 
 // --- X ---
 repeat (abs(mx)) {
