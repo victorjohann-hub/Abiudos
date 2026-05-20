@@ -1,7 +1,7 @@
 spawn_timer--;
 
 // conta quantos inimigos existem
-var enemy_count = instance_number(oSpider);
+var enemy_count = instance_number(oCaranguejo_Enemy);
 
 if (spawn_timer <= 0 && enemy_count < max_enemies) {
 
