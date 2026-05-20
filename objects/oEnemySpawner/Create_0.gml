@@ -9,5 +9,5 @@ max_enemies = 30;
 
 // lista de inimigos possíveis
 enemy_list = [
-    oSpider
+    oCaranguejo_Enemy
 ];

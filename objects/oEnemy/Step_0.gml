@@ -7,7 +7,7 @@ shoot_cooldown--;
 if (!instance_exists(Player)) exit;
 
 if (HP <= 0) {
-    instance_destroy();
+    exit;
 }
 
 

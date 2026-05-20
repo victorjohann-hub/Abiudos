@@ -136,7 +136,7 @@ if (is_dashing) {
 
 
 
-/// SUBPIXEL (ESSENCIAL)
+
 
 hsp += move_x;
 vsp += move_y;
@@ -173,9 +173,6 @@ switch (state) {
 
     break;
 }
-/// =========================
-/// 🧱 COLISÃO (VERSÃO ANTIGA)
-/// =========================
 
 // --- X ---
 repeat (abs(mx)) {
