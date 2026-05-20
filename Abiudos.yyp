@@ -8,7 +8,7 @@
     "children":[],
     "name":"Default",
   },
-  "defaultScriptType":0,
+  "defaultScriptType":1,
   "Folders":[
     {"$GMFolder":"","%Name":"Animation Curves","folderPath":"folders/Animation Curves.yy","name":"Animation Curves","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Extensions","folderPath":"folders/Extensions.yy","name":"Extensions","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -42,6 +42,7 @@
   },
   "name":"Abiudos",
   "resources":[
+    {"id":{"name":"BitPotion","path":"fonts/BitPotion/BitPotion.yy",},},
     {"id":{"name":"LINK_TO_TUTORIALS","path":"notes/LINK_TO_TUTORIALS/LINK_TO_TUTORIALS.yy",},},
     {"id":{"name":"Bench_Sideway","path":"objects/Bench_Sideway/Bench_Sideway.yy",},},
     {"id":{"name":"oBandeira","path":"objects/oBandeira/oBandeira.yy",},},
@@ -49,6 +50,8 @@
     {"id":{"name":"oBarraca_Top","path":"objects/oBarraca_Top/oBarraca_Top.yy",},},
     {"id":{"name":"oBench_Bottom","path":"objects/oBench_Bottom/oBench_Bottom.yy",},},
     {"id":{"name":"oBench_Top","path":"objects/oBench_Top/oBench_Top.yy",},},
+    {"id":{"name":"Obj_dialogo","path":"objects/Obj_dialogo/Obj_dialogo.yy",},},
+    {"id":{"name":"Obj_par_artefatos","path":"objects/Obj_par_artefatos/Obj_par_artefatos.yy",},},
     {"id":{"name":"Object1","path":"objects/Object1/Object1.yy",},},
     {"id":{"name":"Object28","path":"objects/Object28/Object28.yy",},},
     {"id":{"name":"oBulletEnemy","path":"objects/oBulletEnemy/oBulletEnemy.yy",},},
@@ -73,6 +76,7 @@
     {"id":{"name":"oTree_Trunk","path":"objects/oTree_Trunk/oTree_Trunk.yy",},},
     {"id":{"name":"Player","path":"objects/Player/Player.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"Dialogo","path":"scripts/Dialogo/Dialogo.yy",},},
     {"id":{"name":"snd_hit1","path":"sounds/snd_hit1/snd_hit1.yy",},},
     {"id":{"name":"snd_shoot1","path":"sounds/snd_shoot1/snd_shoot1.yy",},},
     {"id":{"name":"map_floor","path":"sprites/map_floor/map_floor.yy",},},

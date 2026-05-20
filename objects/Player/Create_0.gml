@@ -1,4 +1,4 @@
-can_run_when_paused = false;
+	can_run_when_paused = false;
 item_counter = 0;
 HP = 10;
 HP_max = 10;

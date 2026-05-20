@@ -4,7 +4,6 @@
 if (global.game_paused && !can_run_when_paused) exit;
 
 
-
 /// INPUT
 
 var right = keyboard_check(vk_right) || keyboard_check(ord("D"));
