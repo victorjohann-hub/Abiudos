@@ -66,6 +66,7 @@
     {"id":{"name":"oFlowerPot","path":"objects/oFlowerPot/oFlowerPot.yy",},},
     {"id":{"name":"oGameController","path":"objects/oGameController/oGameController.yy",},},
     {"id":{"name":"oMap_PredioBase1","path":"objects/oMap_PredioBase1/oMap_PredioBase1.yy",},},
+    {"id":{"name":"oMenuController","path":"objects/oMenuController/oMenuController.yy",},},
     {"id":{"name":"oPataDeCaranguejo_Item","path":"objects/oPataDeCaranguejo_Item/oPataDeCaranguejo_Item.yy",},},
     {"id":{"name":"oSolid","path":"objects/oSolid/oSolid.yy",},},
     {"id":{"name":"oSolidHelper","path":"objects/oSolidHelper/oSolidHelper.yy",},},
@@ -75,6 +76,7 @@
     {"id":{"name":"oTree_Top","path":"objects/oTree_Top/oTree_Top.yy",},},
     {"id":{"name":"oTree_Trunk","path":"objects/oTree_Trunk/oTree_Trunk.yy",},},
     {"id":{"name":"Player","path":"objects/Player/Player.yy",},},
+    {"id":{"name":"rm_menu","path":"rooms/rm_menu/rm_menu.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"Dialogo","path":"scripts/Dialogo/Dialogo.yy",},},
     {"id":{"name":"snd_hit1","path":"sounds/snd_hit1/snd_hit1.yy",},},
@@ -136,6 +138,7 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"rm_menu","path":"rooms/rm_menu/rm_menu.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
   "templateType":"game",
