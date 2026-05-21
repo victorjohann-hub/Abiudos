@@ -1,4 +1,14 @@
-// Descobre qual room estamos
+if (room == rm_win)
+{
+    is_win = true;
+    screen_title = "VOCE ENCONTROU TODOS OS ARTEFATOS!";
+}
+else
+{
+    is_win = false;
+    screen_title = "GAME OVER";
+}
+
 
 if (room == rm_win)
 {
@@ -11,8 +21,8 @@ else
 
 // Botões
 
-btn_w = 260;
-btn_h = 55;
+btn_w = 220;
+btn_h = 50;
 
 center_x = display_get_gui_width()/2 - btn_w/2;
 
@@ -26,7 +36,7 @@ btn_retry = {
 
 btn_menu = {
     x : center_x,
-    y : 390,
+    y : 400,
     w : btn_w,
     h : btn_h,
     text : "Menu"
@@ -34,8 +44,9 @@ btn_menu = {
 
 btn_quit = {
     x : center_x,
-    y : 460,
+    y : 480,
     w : btn_w,
     h : btn_h,
     text : "Sair"
 };
+
