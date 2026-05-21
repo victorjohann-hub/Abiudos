@@ -76,7 +76,6 @@
     {"name":"Sprite28","order":16,"path":"sprites/Sprite28/Sprite28.yy",},
     {"name":"Sprite39","order":16,"path":"sprites/Sprite39/Sprite39.yy",},
     {"name":"Sprite47","order":2,"path":"sprites/Sprite47/Sprite47.yy",},
-    {"name":"sRoomFloor","order":1,"path":"sprites/sRoomFloor/sRoomFloor.yy",},
     {"name":"sSergipe_Background","order":1,"path":"sprites/sSergipe_Background/sSergipe_Background.yy",},
     {"name":"sSolid","order":20,"path":"sprites/sSolid/sSolid.yy",},
     {"name":"sTambor_Item","order":1,"path":"sprites/sTambor_Item/sTambor_Item.yy",},
