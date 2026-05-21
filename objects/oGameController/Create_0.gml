@@ -9,8 +9,8 @@ game_over = false;
 game_win = false;
 
 // Itens
-items_collected = 0;
-items_to_win = 7;
+artifact_count = 0;
+required_artifacts = 7;
 
 // Epserando o diálogo terminar
 global.pending_win = false;

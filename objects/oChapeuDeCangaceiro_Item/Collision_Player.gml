@@ -16,10 +16,10 @@ if (!global.game_paused) {
 	d.item_name = "Chapéu de Cangaceiro"
 	
 	// Soma item coletado
-oGameController.items_collected += 1;
+oGameController.artifact_count += 1;
 
 // Vitória
-if (oGameController.items_collected >= oGameController.items_to_win)
+if (oGameController.artifact_count >= oGameController.required_artifacts)
 {
     oGameController.game_win = true;
 }

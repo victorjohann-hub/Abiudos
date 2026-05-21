@@ -80,6 +80,7 @@
     {"id":{"name":"oTrash","path":"objects/oTrash/oTrash.yy",},},
     {"id":{"name":"oTree_Top","path":"objects/oTree_Top/oTree_Top.yy",},},
     {"id":{"name":"oTree_Trunk","path":"objects/oTree_Trunk/oTree_Trunk.yy",},},
+    {"id":{"name":"oWinTrigger","path":"objects/oWinTrigger/oWinTrigger.yy",},},
     {"id":{"name":"Player","path":"objects/Player/Player.yy",},},
     {"id":{"name":"rm_gameover","path":"rooms/rm_gameover/rm_gameover.yy",},},
     {"id":{"name":"rm_menu","path":"rooms/rm_menu/rm_menu.yy",},},

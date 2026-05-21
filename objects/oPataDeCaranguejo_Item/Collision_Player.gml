@@ -15,14 +15,7 @@ if (!global.game_paused) {
 	d.item_name = "Pata de Caranguejo"
 	
 	// Soma item coletado
-oGameController.items_collected += 1;
-
-// Vitória
-if (oGameController.items_collected >= oGameController.items_to_win)
-{
-    oGameController.game_win = true;
-}
-
+oGameController.artifact_count += 1;
 
     instance_destroy();
 }

@@ -1,5 +1,5 @@
 	can_run_when_paused = false;
-item_counter = 0;
+artifact_count = 0;
 HP = 10;
 HP_max = 10;
 shoot_delay = 40;

@@ -16,13 +16,8 @@ if (!global.game_paused) {
 	d.item_name = "Tapioca"
 	
 	// Soma item coletado
-oGameController.items_collected += 1;
+oGameController.artifact_count += 1;
 
-// Vitória
-if (oGameController.items_collected >= oGameController.items_to_win)
-{
-    oGameController.game_win = true;
-}
 
     instance_destroy();
 }
