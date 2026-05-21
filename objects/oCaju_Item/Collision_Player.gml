@@ -4,9 +4,10 @@ if (!global.game_paused) {
     var d = instance_create_layer(0, 0, "GUI", oDialogueController);
 
     d.texts = [
-	"O cordel é a alma do Sertão em forma de poesia e papel.",
-	"Não é apenas um folheto.",
-	"É um sistema completo de comunicação, arte e resistência que ajudou a alfabetizar e entreter gerações no Nordeste.",
+	"Símbolo máximo de Aracaju.",
+	"Definindo desde o nome da capital até sua identidade cultura, econômica e afetiva.",
+	"O próprio nome da cidade é uma herança direta desse fruto.",
+	"Derivado do tupi-guarani, a interpretação mais aceita é “cajueiro dos papagaios”."
 	];
     
 	

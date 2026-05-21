@@ -51,7 +51,7 @@ draw_sprite_ext(
 );
 
 /// NOME DO ITEM
-draw_set_font(BitPotion);
+draw_set_font(Silver);
 draw_set_color(make_color_rgb(255, 220, 120));
 
 draw_text(

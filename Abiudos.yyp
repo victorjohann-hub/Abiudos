@@ -42,7 +42,7 @@
   },
   "name":"Abiudos",
   "resources":[
-    {"id":{"name":"BitPotion","path":"fonts/BitPotion/BitPotion.yy",},},
+    {"id":{"name":"Silver","path":"fonts/Silver/Silver.yy",},},
     {"id":{"name":"LINK_TO_TUTORIALS","path":"notes/LINK_TO_TUTORIALS/LINK_TO_TUTORIALS.yy",},},
     {"id":{"name":"Bench_Sideway","path":"objects/Bench_Sideway/Bench_Sideway.yy",},},
     {"id":{"name":"oBandeira","path":"objects/oBandeira/oBandeira.yy",},},
@@ -117,6 +117,8 @@
     {"id":{"name":"sPostes_Base","path":"sprites/sPostes_Base/sPostes_Base.yy",},},
     {"id":{"name":"sPostes_Top","path":"sprites/sPostes_Top/sPostes_Top.yy",},},
     {"id":{"name":"spr_bullet","path":"sprites/spr_bullet/spr_bullet.yy",},},
+    {"id":{"name":"spr_menu_bg","path":"sprites/spr_menu_bg/spr_menu_bg.yy",},},
+    {"id":{"name":"spr_menu_ui","path":"sprites/spr_menu_ui/spr_menu_ui.yy",},},
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},},
     {"id":{"name":"spr_rock_big","path":"sprites/spr_rock_big/spr_rock_big.yy",},},
     {"id":{"name":"spr_rock_small","path":"sprites/spr_rock_small/spr_rock_small.yy",},},
