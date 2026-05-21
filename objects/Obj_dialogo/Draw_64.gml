@@ -9,7 +9,7 @@ draw_rectangle(_dx, _dy, _dx + _boxw, _dy + _boxh, false);
 _dx += 16;
 _dy += 16;
 
-draw_set_font(BitPotion);
+draw_set_font(Silver);
 
 var _name = messages[current_message].name;
 draw_text(_dx, _dy, _name);

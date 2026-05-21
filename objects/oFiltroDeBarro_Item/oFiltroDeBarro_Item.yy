@@ -12,7 +12,10 @@
     "name":"item_Objects",
     "path":"folders/Objects/item_Objects.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"Obj_par_artefatos",
+    "path":"objects/Obj_par_artefatos/Obj_par_artefatos.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

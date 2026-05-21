@@ -4,43 +4,68 @@ menu_state = "main";
 // Volume global
 global.volume = 1;
 
-// Botões do menu principal
+// Diálogo
+global.dialog_active = false;
+
+// Fundo animado
+background_sprite = spr_menu_bg;
+
+// ========================
+// BOTÕES
+// ========================
+
+btn_w = 220;
+btn_h = 50;
+
+// posição central
+var center_x = display_get_gui_width() / 2 - btn_w / 2;
+
+// PLAY
 btn_play = {
-    x: 100,
-    y: 160,
-    w: 220,
-    h: 50,
-    text: "Jogar"
+    x : center_x,
+    y : 340,
+    w : btn_w,
+    h : btn_h,
+    text : "Jogar"
 };
 
+// OPÇÕES
 btn_options = {
-    x: 100,
-    y: 230,
-    w: 220,
-    h: 50,
-    text: "Opcoes"
+    x : center_x,
+    y : 420,
+    w : btn_w,
+    h : btn_h,
+    text : "Opcoes"
 };
 
+// SAIR
 btn_quit = {
-    x: 100,
-    y: 300,
-    w: 220,
-    h: 50,
-    text: "Sair"
+    x : center_x,
+    y : 500,
+    w : btn_w,
+    h : btn_h,
+    text : "Sair"
 };
 
-// Botão voltar
+// VOLTAR
 btn_back = {
-    x: 100,
-    y: 330,
-    w: 220,
-    h: 50,
-    text: "Voltar"
+    x : center_x,
+    y : 500,
+    w : btn_w,
+    h : btn_h,
+    text : "Voltar"
 };
 
-// Slider de volume
-slider_x = 100;
-slider_y = 220;
+// ========================
+// SLIDER DE VOLUME
+// ========================
+
+slider_x = display_get_gui_width() / 2 - 125;
+
+// mais abaixo e alinhado
+slider_y = 360;
+
 slider_w = 250;
 slider_h = 8;
+
 slider_dragging = false;

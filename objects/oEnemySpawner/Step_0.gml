@@ -1,3 +1,5 @@
+if (global.dialog_active) exit;
+
 spawn_timer--;
 
 // conta quantos inimigos existem
