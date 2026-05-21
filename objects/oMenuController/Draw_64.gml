@@ -8,12 +8,16 @@ draw_sprite_stretched(
     display_get_gui_height()
 );
 
-// Função botão
+// ========================
+// FUNÇÃO BOTÃO
+// ========================
+
 function ui_draw_button(_btn)
 {
-    draw_set_color(c_black);
+    // Fundo botão
+    draw_set_color(make_color_rgb(15, 15, 15));
 
-    draw_rectangle(
+    draw_roundrect(
         _btn.x,
         _btn.y,
         _btn.x + _btn.w,
@@ -21,44 +25,75 @@ function ui_draw_button(_btn)
         false
     );
 
+    // Borda dourada
+    draw_set_color(make_color_rgb(205, 175, 90));
+
+    draw_roundrect(
+        _btn.x,
+        _btn.y,
+        _btn.x + _btn.w,
+        _btn.y + _btn.h,
+        true
+    );
+
+    // Texto
+    draw_set_font(Silver);
+
     draw_set_color(c_white);
 
+    draw_set_halign(fa_center);
+    draw_set_valign(fa_middle);
+
     draw_text(
-        _btn.x + 70,
-        _btn.y + 15,
+        _btn.x + (_btn.w / 2),
+        _btn.y + (_btn.h / 2),
         _btn.text
     );
 }
 
-// Fonte padrão
-draw_set_font(-1);
+// ========================
+// CONFIGURAÇÕES TEXTO
+// ========================
+
+draw_set_font(Silver);
 
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);
 
+// ========================
 // MENU PRINCIPAL
+// ========================
+
 if (menu_state == "main")
 {
-   ui_draw_button(btn_play);
-	ui_draw_button(btn_options);
-	ui_draw_button(btn_quit);
+    ui_draw_button(btn_play);
+    ui_draw_button(btn_options);
+    ui_draw_button(btn_quit);
 }
 
+// ========================
 // MENU OPTIONS
+// ========================
+
 else if (menu_state == "options")
 {
-    draw_set_color(c_white);
+    // TEXTO VOLUME
+    draw_set_font(Silver);
+
+    draw_set_color(make_color_rgb(205, 175, 90));
+
+    draw_set_halign(fa_center);
 
     draw_text(
-        display_get_gui_width()/2 - 40,
-        220,
+        display_get_gui_width()/2,
+        250,
         "Volume"
     );
 
-    // Fundo slider
-    draw_set_color(c_gray);
+    // FUNDO SLIDER
+    draw_set_color(make_color_rgb(40, 40, 40));
 
-    draw_rectangle(
+    draw_roundrect(
         slider_x,
         slider_y,
         slider_x + slider_w,
@@ -66,10 +101,10 @@ else if (menu_state == "options")
         false
     );
 
-    // Preenchimento
-    draw_set_color(c_white);
+    // PREENCHIMENTO DOURADO
+    draw_set_color(make_color_rgb(205, 175, 90));
 
-    draw_rectangle(
+    draw_roundrect(
         slider_x,
         slider_y,
         slider_x + (slider_w * global.volume),
@@ -77,7 +112,7 @@ else if (menu_state == "options")
         false
     );
 
-    // Bolinha
+    // BOLINHA
     draw_circle(
         slider_x + (slider_w * global.volume),
         slider_y + 4,
@@ -85,11 +120,18 @@ else if (menu_state == "options")
         false
     );
 
+    // PORCENTAGEM
+    draw_set_color(c_white);
+
     draw_text(
-        display_get_gui_width()/2 - 30,
-        340,
+        display_get_gui_width()/2,
+        390,
         string(round(global.volume * 100)) + "%"
     );
 
     ui_draw_button(btn_back);
+	
+	// RESET ALIGN
+draw_set_halign(fa_left);
+draw_set_valign(fa_top);
 }

@@ -14,26 +14,15 @@ if (!global.game_paused) {
 	
 	d.item_name = "Pata de Caranguejo"
 	
-	
+	// Soma item coletado
+oGameController.items_collected += 1;
 
-    instance_destroy();
+// Vitória
+if (oGameController.items_collected >= oGameController.items_to_win)
+{
+    oGameController.game_win = true;
 }
 
-
-/*show_debug_message("CRIANDO DIALOGO");
-if (!global.game_paused) {
-
-    var d = instance_create_layer(0, 0, "GUI", oDialogueController);
-
-    d.texts = [
-	"Livro de Cordel.",
-	"É a alma do Sertão em forma de poesia e papel.",
-	"Não é apenas um folheto.",
-	"É um sistema completo de comunicação, arte e resistência que ajudou a alfabetizar e entreter gerações no Nordeste.",
-	];
-    
-	
-	d.item_sprite = sprite_index;
 
     instance_destroy();
 }

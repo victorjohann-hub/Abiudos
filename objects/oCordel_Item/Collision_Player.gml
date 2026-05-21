@@ -13,6 +13,16 @@ if (!global.game_paused) {
 	d.item_sprite = sprite_index;
 	
 	d.item_name = "Livro de Cordel"
+	
+	// Soma item coletado
+oGameController.items_collected += 1;
+
+// Vitória
+if (oGameController.items_collected >= oGameController.items_to_win)
+{
+    oGameController.game_win = true;
+}
+
 
     instance_destroy();
 }

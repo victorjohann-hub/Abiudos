@@ -1,3 +1,11 @@
+if (!is_array(texts)) exit;
+
+if (array_length(texts) <= 0) exit;
+
+if (index < 0) exit;
+
+if (index >= array_length(texts)) exit;
+
 var w = display_get_gui_width();
 var h = display_get_gui_height();
 
@@ -52,7 +60,11 @@ draw_sprite_ext(
 
 /// NOME DO ITEM
 draw_set_font(Silver);
+
 draw_set_color(make_color_rgb(255, 220, 120));
+
+draw_set_halign(fa_left);
+draw_set_valign(fa_top);
 
 draw_text(
     box_x1 + 120,
@@ -70,16 +82,21 @@ draw_line(
     box_y1 + 55
 );
 
-/// TEXO PRINCIPAL
+/// TEXTO PRINCIPAL
 draw_set_color(c_white);
 
-draw_text_ext(
-    box_x1 + 120,
-    box_y1 + 70,
-    texts[index],
-    28,
-    box_x2 - box_x1 - 170
-);
+if (index >= 0 && index < array_length(texts))
+{
+    var current_text = texts[index];
+
+    draw_text_ext(
+        box_x1 + 120,
+        box_y1 + 70,
+        current_text,
+        28,
+        box_x2 - box_x1 - 170
+    );
+}
 
 /// BOTÃO [ESPAÇO]
 draw_set_color(make_color_rgb(170, 170, 170));
