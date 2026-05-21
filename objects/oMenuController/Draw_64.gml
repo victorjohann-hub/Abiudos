@@ -80,13 +80,13 @@ else if (menu_state == "options")
     // TEXTO VOLUME
     draw_set_font(Silver);
 
-    draw_set_color(make_color_rgb(205, 175, 90));
+    draw_set_color(c_black);
 
     draw_set_halign(fa_center);
 
     draw_text(
         display_get_gui_width()/2,
-        250,
+        285,
         "Volume"
     );
 
@@ -102,7 +102,7 @@ else if (menu_state == "options")
     );
 
     // PREENCHIMENTO DOURADO
-    draw_set_color(make_color_rgb(205, 175, 90));
+    draw_set_color(c_aqua);
 
     draw_roundrect(
         slider_x,
@@ -121,7 +121,7 @@ else if (menu_state == "options")
     );
 
     // PORCENTAGEM
-    draw_set_color(c_white);
+    draw_set_color(c_black);
 
     draw_text(
         display_get_gui_width()/2,

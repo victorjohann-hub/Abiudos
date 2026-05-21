@@ -15,7 +15,7 @@ if (!global.game_paused) {
 	
 	d.item_name = "Caju"
 	
-	// Soma item coletado
+// Soma item coletado
 oGameController.items_collected += 1;
 
 // Vitória

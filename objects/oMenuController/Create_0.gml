@@ -23,7 +23,7 @@ var center_x = display_get_gui_width() / 2 - btn_w / 2;
 // PLAY
 btn_play = {
     x : center_x,
-    y : 340,
+    y : 300,
     w : btn_w,
     h : btn_h,
     text : "Jogar"
@@ -32,16 +32,16 @@ btn_play = {
 // OPÇÕES
 btn_options = {
     x : center_x,
-    y : 420,
+    y : 380,
     w : btn_w,
     h : btn_h,
-    text : "Opcoes"
+    text : "Opcões"
 };
 
 // SAIR
 btn_quit = {
     x : center_x,
-    y : 500,
+    y : 460,
     w : btn_w,
     h : btn_h,
     text : "Sair"
@@ -50,7 +50,7 @@ btn_quit = {
 // VOLTAR
 btn_back = {
     x : center_x,
-    y : 500,
+    y : 460,
     w : btn_w,
     h : btn_h,
     text : "Voltar"
