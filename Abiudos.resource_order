@@ -1,6 +1,9 @@
 {
   "FolderOrderSettings":[],
   "ResourceOrderSettings":[
+    {"name":"oSoundController","order":2,"path":"objects/oSoundController/oSoundController.yy",},
     {"name":"oWinTrigger","order":1,"path":"objects/oWinTrigger/oWinTrigger.yy",},
+    {"name":"decisivebattle_ost","order":1,"path":"sounds/decisivebattle_ost/decisivebattle_ost.yy",},
+    {"name":"Sprite55","order":1,"path":"sprites/Sprite55/Sprite55.yy",},
   ],
 }

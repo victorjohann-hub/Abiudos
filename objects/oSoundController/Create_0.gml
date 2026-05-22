@@ -1,0 +1,1 @@
+audio_play_sound(decisivebattle_ost, 1, true);
